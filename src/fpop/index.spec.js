@@ -11,7 +11,7 @@ describe(fpop.name, () => {
             mutatedCopy.pop();
 
             expect(fpop(array)).toEqual(mutatedCopy);
-            expect(array).toEqual(pureCopy);
+            expect(pureCopy).toEqual(array);
         })
     })
 });
