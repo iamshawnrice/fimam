@@ -1,5 +1,11 @@
 # Functional Implementations of Mutative Array Methods
 
+A set of simple utilities for working with Arrays without modifying them.
+
+## Installation
+
+Install from npm
+
 ## API
 
 ### fpop
