@@ -69,7 +69,7 @@ console.log(newArray) => [2, 3, 4, 5];
 
 ### fsplice
 
-Designed to mimic the [splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) native array method, fshift takes an array and returns a copy, having removed the passed number of elements starting at the passed index.
+Designed to mimic the [splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) native array method, fsplice takes an array and returns a copy, having removed the passed number of elements starting at the passed index.
 
 ``````
 import { fsplice } from 'fimam';
