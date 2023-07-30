@@ -4,7 +4,15 @@ A set of simple utilities for working with Arrays without modifying them.
 
 ## Installation
 
-Install from npm
+Install from npm via your package manager of choice;
+
+```
+npm install fimam
+```
+
+```
+yarn add fimam
+```
 
 ## API
 
