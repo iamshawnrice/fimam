@@ -25,7 +25,7 @@ Designed to mimic the [pop](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 import { fpop } from 'fimam';
 
 const startingArray = [1, 2, 3, 4, 5];
-const newArray = fpush(startingArray);
+const newArray = fpop(startingArray);
 
 console.log(newArray) => [1, 2, 3, 4];
 ``````
@@ -38,7 +38,7 @@ Designed to mimic the [push](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 import { fpush } from 'fimam';
 
 const startingArray = [1, 2, 3];
-const newArray = fpop(startingArray, 4, 5, 6);
+const newArray = fpush(startingArray, 4, 5, 6);
 
 console.log(newArray) => [1, 2, 3, 4, 5, 6];
 ``````
@@ -49,7 +49,7 @@ If the element to be added is another array, fpush will return a copy with the t
 import { fpush } from 'fimam';
 
 const startingArray = [1, 2, 3];
-const newArray = fpop(startingArray, [4, 5, 6]);
+const newArray = fpush(startingArray, [4, 5, 6]);
 
 console.log(newArray) => [1, 2, 3, 4, 5, 6];
 ``````
