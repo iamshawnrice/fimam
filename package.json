@@ -6,14 +6,14 @@
     "@babel/preset-env": "7.22.9",
     "@babel/preset-typescript": "7.22.5",
     "jest": "29.6.2",
-    "typescript": "^5.1.6"
+    "typescript": "5.1.6"
   },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "description": "A set of simple utilities for working with Arrays.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist",
   "repository": {
     "type": "git",

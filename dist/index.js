@@ -17,3 +17,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./fpop"), exports);
 __exportStar(require("./fpush"), exports);
 __exportStar(require("./fshift"), exports);
+__exportStar(require("./fsplice"), exports);
