@@ -16,6 +16,8 @@ yarn add fimam
 
 ## API
 
+The intent behind this library was to create utilities that take the familiar verbs from native array methods but perform the work in a way that adheres to the principles of functional programming.
+
 ### fpop
 
 Designed to mimic the [pop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) native array method, fpop takes an array and returns a copy, omitting the element with the highest index.
@@ -102,3 +104,7 @@ const newArray = funshift(startingArray, 4, 5)
 
 console.log(newArray) => [4, 5, 1, 2, 3];
 ``````
+
+## Support
+
+Please file an [issue](https://github.com/iamshawnrice/fimam/issues) if there are any gaps or mistakes.
