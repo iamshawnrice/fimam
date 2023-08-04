@@ -23,5 +23,28 @@ describe(fpush.name, () => {
             expect(fpush(pureCopy, [55, '', { something: 'else' }])).toEqual(mutatedCopy);
             expect(pureCopy).toEqual(array);
         });
+    
+        it('should handle empty array input', () => {
+            const result = fpush([], 'a', 'b', 'c');
+            expect(result).toEqual(['a', 'b', 'c']);
+        });
+    
+        it('should handle adding no elements', () => {
+            const originalArray = [10, 20, 30];
+            const result = fpush(originalArray);
+            expect(result).toEqual([10, 20, 30]);
+        });
+    
+        it('should handle arrays with different data types', () => {
+            const result = fpush([1, 'two'], true, { key: 'value' });
+            expect(result).toEqual([1, 'two', true, { key: 'value' }]);
+        });
+    
+        it('should not modify the original array', () => {
+            const originalArray = ['x', 'y', 'z'];
+            const result = fpush(originalArray, 'a', 'b');
+            expect(result).toEqual(['x', 'y', 'z', 'a', 'b']);
+            expect(originalArray).toEqual(['x', 'y', 'z']);
+        });
     });
 });

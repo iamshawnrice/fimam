@@ -12,6 +12,28 @@ describe(fpop.name, () => {
 
             expect(fpop(array)).toEqual(mutatedCopy);
             expect(pureCopy).toEqual(array);
-        })
-    })
+        });
+        
+        it('should handle empty array input', () => {
+            const result = fpop([]);
+            expect(result).toEqual([]);
+        });
+        
+        it('should handle arrays with a single element', () => {
+            const result = fpop(['only']);
+            expect(result).toEqual([]);
+        });
+        
+        it('should handle arrays with different data types', () => {
+            const result = fpop([true, 'hello', 42, { key: 'value' }]);
+            expect(result).toEqual([true, 'hello', 42]);
+        });
+        
+        it('should not modify the original array', () => {
+            const originalArray = [10, 20, 30];
+            const result = fpop(originalArray);
+            expect(result).toEqual([10, 20]);
+            expect(originalArray).toEqual([10, 20, 30]);
+        });
+    });
 });
