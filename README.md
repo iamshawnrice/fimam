@@ -90,3 +90,15 @@ const newArray = fsplice(startingArray, 1, 2, 'three', 'four');
 
 console.log(newArray) => [1, 2, 'three', 'four', 5];
 ``````
+
+### funshift
+
+Designed to mimic the [unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) native array method, funshift takes an array and returns a copy, prepending the passed elements to it.
+
+``````javascript
+import { funshift } from 'fimam';
+const startingArray = [1, 2, 3];
+const newArray = funshift(startingArray, 4, 5)
+
+console.log(newArray) => [4, 5, 1, 2, 3];
+``````
